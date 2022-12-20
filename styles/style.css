@@ -59,33 +59,52 @@ body {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	gap: 10vh;
-	padding: 5vh 0;
+	padding: 10vh 0;
 }
 .section {
 	width: 100%;
-	background-color: rgba(172, 172, 172, 0.9);
+	background-color: rgba(187, 187, 187, 0.8);
 	text-align: center;
 	font-family: "Raleway", sans-serif;
 	box-shadow: 0px 0px 44px 5px rgba(31, 31, 31, 1);
-	height: 70vh;
 }
 .section header {
-	font-size: 1.5rem;
+	font-size: 1.5vmax;
 	padding: 15px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	-webkit-text-stroke: 1px black;
 	box-shadow: 0px 0px 44px 5px rgba(31, 31, 31, 1);
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-weight: bold;
+	-webkit-text-stroke: 1px black;
+	background-color: rgba(187, 187, 187, 0.6);
+}
+.section .text {
+	font-size: 1.2vmax;
+	padding: 15px;
+	font-weight: normal;
 }
 .footer {
 	justify-content: center;
 	height: 50px;
 }
-
+@media only screen and (max-width: 1440px) {
+	.section .text {
+		font-size: 1.5vmax;
+	}
+}
+@media only screen and (max-width: 1024px) {
+	.section .text {
+		font-size: 1.8vmax;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.section .text {
+		font-size: 2.1vmax;
+	}
+}
 @media only screen and (max-width: 600px) {
 	.header {
 		grid-template-columns: 1fr;
@@ -98,6 +117,9 @@ body {
 		justify-content: center;
 	}
 	.section header {
-		font-size: 1rem;
+		font-size: 1.8vmax;
+	}
+	.section .text {
+		font-size: 2.5vmax;
 	}
 }
