@@ -42,25 +42,24 @@ body {
   height: 100vh;
   padding-top: 60px;
   overflow-y: scroll;
-}
-.content,
-.contact-content {
-  background-color: lightgray;
-  overflow: hidden;
-  display: grid;
   background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.65)
     ),
     url("../imgs/bgmain.webp");
+}
+.content,
+.contact-content {
+  overflow: hidden;
+  display: grid;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   gap: 10vh;
   padding: 10vh 2vw 3vh 2vw;
-  min-height: calc(100vh - 60px);
+  min-height: calc(100vh - 110px);
 }
 .section {
   width: 100%;
