@@ -44,7 +44,8 @@ body {
   height: calc(100vh - 60px);
   overflow-y: scroll;
 }
-.content {
+.content,
+.contact-content {
   background-color: lightgray;
   overflow: hidden;
   display: grid;
@@ -64,7 +65,8 @@ body {
 }
 .section {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(10px);
   text-align: center;
   font-family: "Raleway", sans-serif;
   box-shadow: 0px 0px 44px 5px rgb(0, 0, 0);
@@ -111,7 +113,8 @@ body {
 }
 .contact {
   align-items: center;
-  border-radius: 5px;
+  border-radius: 25px;
+  align-self: center;
 }
 .contactgrid {
   display: grid;
@@ -120,13 +123,16 @@ body {
   gap: 3vh 2vw;
   width: 100%;
 }
+.contact-content {
+  padding: 0px 2vw;
+}
 .box {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 1);
   border-radius: 5px;
   height: fit-content;
-  padding: 5px;
+  padding: 5px 5px 10px;
 }
 .boxhead {
   padding: 5px;
@@ -184,7 +190,11 @@ body {
     width: 100%;
     margin-top: 0;
   }
-  .content {
+  .contact {
+    border-radius: 0px;
+  }
+  .content,
+  .contact-content {
     padding: 3vh 2vw 3vh 2vw;
   }
   .contactgrid {

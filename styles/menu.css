@@ -1,152 +1,153 @@
 .menupc ul {
-	display: flex;
-	align-items: center;
-	height: 60px;
+  display: flex;
+  align-items: center;
+  height: 60px;
 }
 .menupc ul,
 .sidemenu ul {
-	list-style: none;
+  list-style: none;
 }
 .menupc li {
-	padding: 3px 1px;
+  padding: 3px 1px;
 }
 .menupc ul a {
-	height: 60px;
-	display: flex;
-	align-items: center;
-	text-align: center;
-	background-color: transparent;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: transparent;
 }
 .menupc ul a {
-	padding: 0px 15px;
-	border-left: 1px solid rgb(160, 160, 160);
+  padding: 0px 15px;
+  border-left: 1px solid rgb(160, 160, 160);
 
-	transition: 0.5s all ease;
-	text-decoration: transparent;
+  transition: 0.5s all ease;
+  text-decoration: transparent;
 }
 .menupc ul a:hover {
-	padding: 0px 25px;
-	box-shadow: inset 0px 0px 15px 2px rgba(0, 0, 0, 0.4);
-	text-decoration: underline;
-	color: brown;
-	background-color: white;
-	font-weight: bolder;
+  padding: 0px 25px;
+  box-shadow: inset 0px 0px 15px 2px rgba(0, 0, 0, 0.4);
+  text-decoration: underline;
+  color: brown;
+  background-color: white;
+  font-weight: bolder;
 }
 .menupc ul a,
 .sidemenu ul a {
-	color: white;
-	text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 .menumobile,
 .sidemenu {
-	display: none;
+  display: none;
 }
 .menumobile {
-	width: 60px;
+  width: 60px;
 }
 .menupc {
-	width: fit-content;
-	height: 60px;
+  width: fit-content;
+  height: 60px;
 }
 .menupc,
 .menumobile {
-	justify-self: flex-end;
+  justify-self: flex-end;
 }
 .menumobile {
-	position: absolute;
-	right: 0;
+  position: absolute;
+  right: 0;
 }
 .menu {
-	padding: 10px;
-	display: inline-block;
-	cursor: pointer;
-	background-color: transparent;
-	border: 0;
-	margin: 0;
-	z-index: 2;
+  padding: 10px;
+  display: inline-block;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  z-index: 2;
 }
 .sidemenu,
 .menu {
-	transition: 0.5s all ease;
+  transition: 0.5s all ease;
 }
 
 .menu-box {
-	width: 40px;
-	height: 24px;
-	display: inline-block;
-	position: relative;
+  width: 40px;
+  height: 24px;
+  display: inline-block;
+  position: relative;
 }
 
 .menu-bars,
 .menu-bars::after,
 .menu-bars::before {
-	width: 100%;
-	height: 3px;
-	background-color: white;
-	position: absolute;
-	left: 0;
-	top: 50%;
-	transition: 0.4s transform ease, 0.2s background-color ease;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transition: 0.4s transform ease, 0.2s background-color ease;
 }
 .menu-bars {
-	transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 .sidemenu {
-	top: 60px;
-	width: 100%;
-	right: -100vw;
-	position: fixed;
-	background-color: rgba(0, 0, 0, 0.8);
+  top: 60px;
+  width: 100%;
+  right: -100vw;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
 }
 .sidemenu ul a:hover > li {
-	box-shadow: inset 0px 0px 35px 2px rgba(0, 0, 0, 0.9);
-	font-size: 2rem;
-	color: hsl(0, 71%, 57%);
+  box-shadow: inset 0px 0px 35px 2px rgba(0, 0, 0, 0.9);
+  font-size: 2rem;
+  color: hsl(0, 71%, 57%);
 }
 .sidemenu ul a li {
-	line-height: 4rem;
-	text-align: center;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.514);
-	font-size: 1.7rem;
-	transition: 0.3s all ease;
+  line-height: 4rem;
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.514);
+  font-size: 1.7rem;
+  transition: 0.3s all ease;
 }
 .sidemenu ul a:last-child > li {
-	border-bottom: unset;
+  border-bottom: unset;
 }
 .menu-bars::after,
 .menu-bars::before {
-	content: "";
+  content: "";
 }
 .menu-bars::before {
-	top: -10px;
+  top: -10px;
 }
 .menu-bars::after {
-	top: 10px;
+  top: 10px;
 }
 .menu--opened .menu-bars {
-	background-color: transparent;
+  background-color: transparent;
 }
 
 .menu--opened .menu-bars:before {
-	transform: translateY(10px) rotate(45deg);
+  transform: translateY(10px) rotate(45deg);
 }
 
 .menu--opened .menu-bars:after {
-	transform: translateY(-10px) rotate(-45deg);
+  transform: translateY(-10px) rotate(-45deg);
 }
 @media only screen and (max-width: 768px) {
 }
 @media only screen and (max-width: 600px) {
-	.menumobile {
-		display: block;
-	}
-	.sidemenu {
-		display: block;
-	}
-	.side--opened {
-		transform: translateX(-100vw);
-	}
-	.menupc {
-		display: none;
-	}
+  .menumobile {
+    display: block;
+  }
+  .sidemenu {
+    display: block;
+  }
+  .side--opened {
+    transform: translateX(-100vw);
+  }
+  .menupc {
+    display: none;
+  }
 }
