@@ -23,16 +23,13 @@ body {
 .sidemenu {
   font-family: "Raleway", sans-serif;
 }
-.fakeheader {
-  height: 60px;
-}
 .header {
   justify-content: space-between;
   display: flex;
   height: 60px;
   font-size: 1.2rem;
   position: fixed;
-  z-index:99;
+  z-index: 99;
 }
 .header .logo {
   display: flex;
@@ -42,7 +39,8 @@ body {
   height: 60px;
 }
 .content-wrap {
-  height: calc(100vh - 60px);
+  height: 100vh;
+  padding-top: 60px;
   overflow-y: scroll;
 }
 .content,
