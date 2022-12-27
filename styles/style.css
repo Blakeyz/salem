@@ -48,15 +48,15 @@ body {
       rgba(0, 0, 0, 0.65)
     ),
     url("../imgs/bgmain.webp");
+background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .content,
 .contact-content {
   overflow: hidden;
   display: grid;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   gap: 10vh;
   padding: 10vh 2vw 3vh 2vw;
   min-height: calc(100vh - 110px);
